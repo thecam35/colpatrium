@@ -1,5 +1,0 @@
-cloudflared tunnel --url http://localhost:5000
-cd C:\Users\camil\Desktop\pruebacolpa
-python COLPA.py
-
-Selenium y Flask
